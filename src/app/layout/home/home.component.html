@@ -54,28 +54,45 @@
           <mat-icon class="example-tab-icon text-black">monetization_on</mat-icon>
           <span>CONVERT</span>
         </ng-template>
-        <!-- amount input -->
-       <span class="amount fields">AMOUNT</span>
-        <mat-form-field class="fields col-md-3" appearance="outline">
-          <mat-label></mat-label>
-          <div class="dollar-sign">$</div>
-          <input matInput placeholder="Placeholder" class="input-with-dollar-sign">
-        </mat-form-field>
-         <!-- From -->
-        <span class="from" > From</span>
-        <mat-form-field class="fields col-md-3" appearance="outline">
-          <mat-label></mat-label>
-          <input matInput placeholder="" class="input-with-dollar-sign">
-        </mat-form-field>
-        <!-- To -->
-     
-        <mat-form-field class="fields col-md-3" appearance="outline">
-          <mat-label></mat-label>
-          <input matInput placeholder="" class="input-with-dollar-sign">
-        </mat-form-field>
-
-        <button mat-raised-button color="primary">Convert</button>
+      
+        <div class="container">
+          <div class="col-md-12">
+            <!-- Amount input -->
+            <div class="col-md-4">
+              <div class=""><span class="headers">Amount</span></div>
+              <mat-form-field class="fields" appearance="outline">
+                <mat-label></mat-label>
+                <div class="dollar-sign">$</div>
+                <input matInput placeholder="Placeholder" class="input-with-dollar-sign">
+              </mat-form-field>
+            </div>
+      
+            <!-- From input -->
+            <div class="col-md-4">
+              <div><span class="headers">From</span></div>
+              <mat-form-field class="fields" appearance="outline">
+                <mat-label></mat-label>
+                <input matInput placeholder="" class="input-with-dollar-sign">
+              </mat-form-field>
+            </div>
+      
+            <!-- To input -->
+            <div class="col-md-4">
+              <div><span class="headers">To</span></div>
+              <mat-form-field class="fields" appearance="outline">
+                <mat-label></mat-label>
+                <input matInput placeholder="" class="input-with-dollar-sign">
+              </mat-form-field>
+            </div>
+          </div>
+      
+          <!-- Convert button -->
+          <div class="">
+            <button mat-raised-button color="primary">Convert</button>
+          </div>
+        </div>
       </mat-tab>
+      
 
       <mat-tab>
         <ng-template mat-tab-label>

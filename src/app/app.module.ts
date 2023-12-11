@@ -33,6 +33,7 @@ import { FormsModule,NgModel } from '@angular/forms';
     MatIconModule,
     MatTabsModule,
     FormsModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
