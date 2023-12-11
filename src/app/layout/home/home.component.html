@@ -1,44 +1,110 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Currency Converter</title>
-    </head>
-    <body>
-      <div class="top-nav left custom-padding">
-        <ul class="nav justify-content-end">
-          <ul class="nav nav-pills nav-fill">
-            <li class="nav-item">
-              <a class="nav-link active " aria-current="page" href="#">Sign In</a>
-            </li>
-            <li class="nav-item mx-2"> <!-- Use Bootstrap mx-2 class for horizontal margin -->
-              <a class="nav-link active " href="#" tabindex="-1">Register</a>
-            </li>
-          </ul>
-        </ul>
-      </div>
-      <div class="top-nav center" >
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active text-white"  aria-current="page" href="#">SEND MONEY</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">CONVERTER</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">CURRENCY API</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">TOOLS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">RESOURCES</a>
-          </li>
-         
-        </ul>
+<!DOCTYPE html>
+<html lang="en">
 
-      </div>
-      
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+</head>
+
+<body>
+  <div class="top-nav left custom-padding">
+    <ul class="nav justify-content-end">
+      <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="#">Sign In</a>
+        </li>
+        <li class="nav-item mx-2"> <!-- Use Bootstrap mx-2 class for horizontal margin -->
+          <a class="nav-link active " href="#" tabindex="-1">Register</a>
+        </li>
+      </ul>
+    </ul>
+  </div>
+  <div class="top-nav center">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active text-white" aria-current="page" href="#">SEND MONEY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">CONVERTER</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">CURRENCY API</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">TOOLS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">RESOURCES</a>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <div class="sub-section content-highlight text-white">
+    <h1>VIDEH CURRENCY CONVERTER</h1>
+    <span class="hint-message">Convert currencies with ease!</span>
+  </div>
+  <!-- converter div -->
+  <div class="converter">
+    <mat-tab-group>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon text-black">monetization_on</mat-icon>
+          <span>CONVERT</span>
+        </ng-template>
+        <!-- amount input -->
+       <span class="amount fields">AMOUNT</span>
+        <mat-form-field class="fields col-md-3" appearance="outline">
+          <mat-label></mat-label>
+          <div class="dollar-sign">$</div>
+          <input matInput placeholder="Placeholder" class="input-with-dollar-sign">
+        </mat-form-field>
+         <!-- From -->
+        <span class="from" > From</span>
+        <mat-form-field class="fields col-md-3" appearance="outline">
+          <mat-label></mat-label>
+          <input matInput placeholder="" class="input-with-dollar-sign">
+        </mat-form-field>
+        <!-- To -->
+     
+        <mat-form-field class="fields col-md-3" appearance="outline">
+          <mat-label></mat-label>
+          <input matInput placeholder="" class="input-with-dollar-sign">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary">Convert</button>
+      </mat-tab>
+
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon text-black">done</mat-icon>
+          <span>SEND</span>
+        </ng-template>
+        Content 2
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon text-black">insights</mat-icon>
+          <span>CHARTS</span>
+        </ng-template>
+        Content 2
+      </mat-tab>
+
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon text-black">notifications</mat-icon>
+          <span>ALERTS</span>
+        </ng-template>
+
+        Content 3
+      </mat-tab>
+    </mat-tab-group>
+
+  </div>
+
+
+</body>
+
 </html>

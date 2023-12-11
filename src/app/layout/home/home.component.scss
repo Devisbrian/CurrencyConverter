@@ -1,12 +1,134 @@
-
 body {
     background-image: url('../../../assets/img.jpg');
     // margin-top: 35px;
     font-family: Arial, sans-serif;
     // background-color: #cacaca;
     text-align: center;
-    
+
 }
-.custom-padding{
-    padding-top: 20px;  
+
+.custom-padding {
+    padding-top: 20px;
 }
+
+.sub-section {
+    margin-top: 40px;
+    font-family: monospace;
+    font-weight: 400;
+}
+
+h1 {
+    color: white;
+}
+
+.example-tab-icon {
+    margin-right: 8px;
+}
+
+.converter {
+    margin-top: 50px;
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+mat-tab-group {
+    background-color: white;
+    border-radius: 8px;
+    /* Optional: Add border-radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional: Add box shadow for a subtle effect */
+    width: 180vh;
+    height: 50vh;
+
+}
+
+span {
+    color: black;
+}
+
+::ng-deep .mat-tab-label {
+    min-width: 200px;
+    /* Adjust the width according to your preference */
+    justify-content: left;
+    /* Optional: Centers the content horizontally */
+}
+
+button {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Add this to your global styles or component-specific styles */
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: #000;
+    /* Set the border color to black or your desired color */
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-label {
+    color: #000;
+    /* Set the label color to black or your desired color */
+}
+
+/* Optional: Set the focus color */
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-thick {
+    color: #000;
+    /* Set the focus border color to black or your desired color */
+}
+
+.example-container mat-form-field + mat-form-field {
+    margin-left: 8px;
+}
+
+.example-right-align {
+    text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+}
+
+.mat-form-field {
+    position: relative;
+}
+
+.dollar-sign {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    /* Adjust the left position as needed */
+    transform: translateY(-50%);
+    color: black;
+    /* Set the color you want */
+    font-size: 1.5rem;
+    /* Adjust the font size as needed */
+    pointer-events: none;
+    /* Ensure the dollar sign doesn't interfere with input */
+}
+
+.input-with-dollar-sign {
+    padding-left: 30px;
+    /* Adjust the padding to ensure the input starts after the dollar sign */
+}
+
+.fields {
+    float: left;
+    margin-left: 6vh;
+    // margin-top: 30px;
+}
+.amount{
+    top: 10vh !important;
+    margin-right: 150vh;
+}
+.from{
+    top: 10vh !important;
+}
+.to{
+  margin-right: 70vh;
+}
+
