@@ -56,34 +56,32 @@
         </ng-template>
       
         <div class="container">
-          <div class="col-md-12">
-            <!-- Amount input -->
-            <div class="col-md-4">
-              <div class=""><span class="headers">Amount</span></div>
-              <mat-form-field class="fields" appearance="outline">
-                <mat-label></mat-label>
-                <div class="dollar-sign">$</div>
-                <input matInput placeholder="Placeholder" class="input-with-dollar-sign">
-              </mat-form-field>
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputPassword6" class="col-form-label">Amount</label>
             </div>
-      
-            <!-- From input -->
-            <div class="col-md-4">
-              <div><span class="headers">From</span></div>
-              <mat-form-field class="fields" appearance="outline">
-                <mat-label></mat-label>
-                <input matInput placeholder="" class="input-with-dollar-sign">
-              </mat-form-field>
+            <div class="col-auto">
+              <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
             </div>
-      
-            <!-- To input -->
-            <div class="col-md-4">
-              <div><span class="headers">To</span></div>
-              <mat-form-field class="fields" appearance="outline">
-                <mat-label></mat-label>
-                <input matInput placeholder="" class="input-with-dollar-sign">
-              </mat-form-field>
+            <!-- <div class="col-auto">
+              <span id="passwordHelpInline" class="form-text">
+                Must be 8-20 characters long.
+              </span>
+            </div> -->
+          </div>
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputPassword6" class="col-form-label">FROM</label>
             </div>
+            <div class="col-auto">
+              <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-auto">
+              <i class="fa-solid fa-arrow-right"></i>
+              <!-- Your content goes here -->
+              <i class="fas fa-arrow-right"></i> <!-- Forward arrow icon -->
+           </div>
+           
           </div>
       
           <!-- Convert button -->
