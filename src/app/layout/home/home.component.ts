@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgModel } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -7,19 +7,20 @@ import { NgModel } from '@angular/forms';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
   usdAmount: number = 0;
   eurAmount: number = 0;
   exchangeRate: number = 0.81;
 
 
-  constructor() { }
+  constructor(private fb: FormBuilder) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  convert(){
-
-  }
+  onSubmit(){}
+  currencyConverterForm : FormGroup = new FormGroup({
+    amount: new FormControl("", Validators.required),
+    from : new FormControl("",Validators.required),
+    to : new FormControl("",Validators.required)
+  })
 
 }

@@ -13,7 +13,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import { HomeComponent } from './layout/home/home.component';
 import { MatTabsModule} from '@angular/material/tabs'
-import { FormsModule,NgModel } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -34,6 +34,7 @@ import { FormsModule,NgModel } from '@angular/forms';
     MatIconModule,
     MatTabsModule,
     FormsModule,
+    ReactiveFormsModule
   
   
   ],

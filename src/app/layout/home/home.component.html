@@ -46,99 +46,108 @@
     <h1>VIDEH CURRENCY CONVERTER</h1>
     <span class="hint-message">Convert currencies with ease!</span>
   </div>
-  <!-- converter div -->
-  <div class="converter">
-    <mat-tab-group>
-      <mat-tab>
-        <ng-template mat-tab-label>
-          <mat-icon class="example-tab-icon text-black">monetization_on</mat-icon>
-          <span>CONVERT</span>
-        </ng-template>
-      
-        <div class="container">
-          <div class="row g-3 mb-4">
-            <!-- Amount Label Column -->
-            <div class="col-12">
-              <label for="inputAmount" class="form-label">Amount</label>
+  <!-- converter form -->
+  <form [formGroup]="currencyConverterForm" (ngSubmit)="onSubmit()">
+    <div class="converter">
+      <mat-tab-group>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon text-black">monetization_on</mat-icon>
+            <span>CONVERT</span>
+          </ng-template>
+
+          <div class="container">
+            <div class="row g-3 mb-4">
+              <!-- Amount Label Column -->
+              <div class="col-12">
+                <label for="inputAmount"  formControlName="amount" class="form-label">Amount</label>
+              </div>
+
+              <!-- Input Box Column -->
+              <div class="col-12">
+                <input type="text" class="form-control form-control-lg" id="inputAmount" placeholder="Enter amount">
+              </div>
             </div>
-            
-            <!-- Input Box Column -->
-            <div class="col-12">
-              <input type="text" class="form-control form-control-lg" id="inputAmount" placeholder="Enter amount">
+            <div class="row g-3 mb-4">
+              <div class="col-12">
+                <!-- From label Column -->
+                <label for="selectFrom" formControlName="from" class="col-form-label">FROM</label>
+              </div>
+              <div class="col-12">
+                <select id="selectFrom" class="form-select form-select-lg">
+                  <!-- Add your dropdown options here -->
+                  <option value="USD">
+                    <img src="assets/USA.jpg" alt="USA Flag"> USD - US DOLLAR
+                  </option>
+
+
+
+                  <option value="option2">EUR - EURO</option>
+                  <option value="option3">GBP - BRITISH POUND</option>
+                  <option value="option4">CAD - CANADIAN DOLLAR</option>
+                  <option value="option5">AUD - AUSTRALIAN DOLLAR</option>
+                </select>
+              </div>
+            </div>
+
+
+
+            <div class="row g-3 mb-4">
+              <div class="col-12">
+                <!-- From label Column -->
+                <label for="inputFrom" formControlName="to" class="col-form-label">TO</label>
+              </div>
+              <div class="col-12">
+                <div class="col-12">
+                  <select id="selectFrom" class="form-select form-select-lg">
+                    <!-- Add your dropdown options here -->
+                    <option value="USD">
+                      <img src="assets/USA.jpg" alt="USA Flag"> USD - US DOLLAR
+                    </option>
+                    <option value="option2">EUR - EURO</option>
+                    <option value="option3">GBP - BRITISH POUND</option>
+                    <option value="option4">CAD - CANADIAN DOLLAR</option>
+                    <option value="option5">AUD - AUSTRALIAN DOLLAR</option>
+                  </select>
+                </div>
+              </div>
+
+
+            </div>
+
+            <!-- Convert button -->
+            <div class="convertButton">
+              <button mat-raised-button color="primary">Convert</button>
             </div>
           </div>
-          <div class="row g-3 mb-4">
-            <div class="col-12">
-              <!-- From label Column -->
-              <label for="selectFrom" class="col-form-label">FROM</label>
-            </div>
-            <div class="col-12">
-              <select id="selectFrom" class="form-select form-select-lg">
-                <!-- Add your dropdown options here -->
-                <option value="USD">
-                  <img src="assets/USA.jpg" alt="USA Flag"> USD - US DOLLAR
-                </option>
-                
-                
-                
-                <option value="option2">EUR - EURO</option>
-                <option value="option3">GBP - BRITISH POUND</option>
-                <option value="option4">CAD - CANADIAN DOLLAR</option>
-                <option value="option5">AUD - AUSTRALIAN DOLLAR</option>
-              </select>
-            </div>
-          </div>
-          
-          
-          
-          <div class="row g-3 mb-4">
-            <div class="col-12">
-              <!-- From label Column -->
-              <label for="inputFrom" class="col-form-label">TO</label>
-            </div>
-            <div class="col-12">
-              <input type="" id="" class="form-control form-control-lg" >
-            </div>
-           
-           
-          </div>
-      
-          <!-- Convert button -->
-          <div class="convertButton">
-            <button mat-raised-button color="primary">Convert</button>
-          </div>
-        </div>
-      </mat-tab>
-      
-
-      <mat-tab>
-        <ng-template mat-tab-label>
-          <mat-icon class="example-tab-icon text-black">done</mat-icon>
-          <span>SEND</span>
-        </ng-template>
-        Content 2
-      </mat-tab>
-      <mat-tab>
-        <ng-template mat-tab-label>
-          <mat-icon class="example-tab-icon text-black">insights</mat-icon>
-          <span>CHARTS</span>
-        </ng-template>
-        Content 2
-      </mat-tab>
-
-      <mat-tab>
-        <ng-template mat-tab-label>
-          <mat-icon class="example-tab-icon text-black">notifications</mat-icon>
-          <span>ALERTS</span>
-        </ng-template>
-
-        Content 3
-      </mat-tab>
-    </mat-tab-group>
-
-  </div>
+        </mat-tab>
 
 
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon text-black">done</mat-icon>
+            <span>SEND</span>
+          </ng-template>
+          Content 2
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon text-black">insights</mat-icon>
+            <span>CHARTS</span>
+          </ng-template>
+          Content 2
+        </mat-tab>
+
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon text-black">notifications</mat-icon>
+            <span>ALERTS</span>
+          </ng-template>
+
+          Content 3
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </form>
 </body>
-
 </html>
