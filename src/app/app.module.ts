@@ -14,7 +14,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { HomeComponent } from './layout/home/home.component';
 import { MatTabsModule} from '@angular/material/tabs'
 import { FormsModule,NgModel } from '@angular/forms';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +34,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatIconModule,
     MatTabsModule,
     FormsModule,
-    FontAwesomeModule
+  
   
   ],
   providers: [],

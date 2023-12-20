@@ -56,36 +56,55 @@
         </ng-template>
       
         <div class="container">
-          <div class="row g-3 align-items-center">
-            <div class="col-auto">
-              <label for="inputPassword6" class="col-form-label">Amount</label>
+          <div class="row g-3 mb-4">
+            <!-- Amount Label Column -->
+            <div class="col-12">
+              <label for="inputAmount" class="form-label">Amount</label>
             </div>
-            <div class="col-auto">
-              <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+            
+            <!-- Input Box Column -->
+            <div class="col-12">
+              <input type="text" class="form-control form-control-lg" id="inputAmount" placeholder="Enter amount">
             </div>
-            <!-- <div class="col-auto">
-              <span id="passwordHelpInline" class="form-text">
-                Must be 8-20 characters long.
-              </span>
-            </div> -->
           </div>
-          <div class="row g-3 align-items-center">
-            <div class="col-auto">
-              <label for="inputPassword6" class="col-form-label">FROM</label>
+          <div class="row g-3 mb-4">
+            <div class="col-12">
+              <!-- From label Column -->
+              <label for="selectFrom" class="col-form-label">FROM</label>
             </div>
-            <div class="col-auto">
-              <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+            <div class="col-12">
+              <select id="selectFrom" class="form-select form-select-lg">
+                <!-- Add your dropdown options here -->
+                <option value="USD">
+                  <img src="assets/USA.jpg" alt="USA Flag"> USD - US DOLLAR
+                </option>
+                
+                
+                
+                <option value="option2">EUR - EURO</option>
+                <option value="option3">GBP - BRITISH POUND</option>
+                <option value="option4">CAD - CANADIAN DOLLAR</option>
+                <option value="option5">AUD - AUSTRALIAN DOLLAR</option>
+              </select>
             </div>
-            <div class="col-auto">
-              <i class="fa-solid fa-arrow-right"></i>
-              <!-- Your content goes here -->
-              <i class="fas fa-arrow-right"></i> <!-- Forward arrow icon -->
-           </div>
+          </div>
+          
+          
+          
+          <div class="row g-3 mb-4">
+            <div class="col-12">
+              <!-- From label Column -->
+              <label for="inputFrom" class="col-form-label">TO</label>
+            </div>
+            <div class="col-12">
+              <input type="" id="" class="form-control form-control-lg" >
+            </div>
+           
            
           </div>
       
           <!-- Convert button -->
-          <div class="">
+          <div class="convertButton">
             <button mat-raised-button color="primary">Convert</button>
           </div>
         </div>
